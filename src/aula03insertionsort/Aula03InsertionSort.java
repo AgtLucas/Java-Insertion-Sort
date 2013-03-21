@@ -40,5 +40,19 @@ public class Aula03InsertionSort {
         for (i = 0; i <= 4; i++) {
             System.out.println((i + 1) + "° número: " + x[i]);
         }
+        
+        int location = 0;
+        int result = 1;
+        
+        for (int count = 0; count < 16; count++) {
+            if (x[location] == x[location + 1]) {
+                result++;
+                location++;
+            } else {
+                count = 16;
+            }
+        }
+        
+        System.out.println("Menor número é: " + x[0] + ", e teve " + result + " aparição(ões) no vetor.");
     }
 }
