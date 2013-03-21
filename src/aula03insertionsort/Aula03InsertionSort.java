@@ -36,10 +36,6 @@ public class Aula03InsertionSort {
             }
             x[j + 1] = eleito;
         }
- 
-        for (i = 0; i <= 4; i++) {
-            System.out.println((i + 1) + "° número: " + x[i]);
-        }
         
         int location = 0;
         int result = 1;
@@ -51,6 +47,10 @@ public class Aula03InsertionSort {
             } else {
                 count = 16;
             }
+        }
+ 
+        for (i = 0; i <= 4; i++) {
+            System.out.println((i + 1) + "° número: " + x[i]);
         }
         
         System.out.println("Menor número é: " + x[0] + ", e teve " + result + " aparição(ões) no vetor.");
